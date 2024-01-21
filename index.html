@@ -79,13 +79,15 @@
        <div class="contact" id="contact">
         <h2>Contact</h2>
         <div class="contactInfo">
-            <form onsubmit="sendEmail(); reset(); return false;">
+            <form
+            action="https://formspree.io/f/xyyrkgad"
+            method="POST">
                 <h3>Name</h3>
                 <input type="text" id="name" placeholder="" required>
                 <h3>Email</h3>
                 <input type="email" id="email" placeholder="" required>
                 <h3>Message</h3>
-                <textarea id="message" rows="8" placeholder=" "></textarea>
+                <textarea name="message" id="message" rows="8" placeholder=" "></textarea>
                 <button type="submit">Submit</button>
             </form>
         </div>
@@ -101,12 +103,14 @@
        </div>
    </div>
 
+
+
    
 
    <script src="https://smtpjs.com/v3/smtp.js"></script>
    <script> function sendEmail(){
     Email.send({
-SecureToken : "c2511860-8a31-49cb-8e15-eeea50c61131",
+SecureToken : "218aeb0b-a0af-4a20-9ccd-3cecb774db03",
 To : 'nolelolel@gmail.com',
 From : document.getElementById("email").value,
 Subject : "Contactform",
