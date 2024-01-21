@@ -103,21 +103,20 @@
 
    
 
-   <script src="https://smtpjs.com/v3/smtp.js">
-    function sendEmail(){
-        Email.send({
-    SecureToken : "cd4152ad-ff58-4f3a-bf52-b9f53c2c63c3",
-    To : 'nolelolel@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "Contactform",
-    Body : "Name: " + document.getElementById("name").value
-    + "<br> Email: " + document.getElementById("email").value
-    + "<br> Message: " + document.getElementById("message").value
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
+   <script> function sendEmail(){
+    Email.send({
+SecureToken : "cd4152ad-ff58-4f3a-bf52-b9f53c2c63c3",
+To : 'nolelolel@gmail.com',
+From : document.getElementById("email").value,
+Subject : "Contactform",
+Body : "Name: " + document.getElementById("name").value
++ "<br> Email: " + document.getElementById("email").value
++ "<br> Message: " + document.getElementById("message").value
 }).then(
-  message => alert("We look forward to your email"),
+message => alert("We look forward to your email"),
 );
-}
-    </script>
+}</script>
     
 </body>
 </html>
