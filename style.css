@@ -1,0 +1,211 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 10;
+    max-width: 1300px;
+    background-color: black;
+}
+
+.helasidan{
+    max-width: 1300;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header{
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    background-image: url("https://scontent.farn2-2.fna.fbcdn.net/v/t39.30808-6/327230066_935705961174155_6464509754669393503_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=Zatf-1_cf4MAX-S0bSu&_nc_ht=scontent.farn2-2.fna&oh=00_AfApMDYC2A47s7xj3NR-VCeHyw0xMCgm0NiPDYsL_bDVzw&oe=65AFE802");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.headerLinks{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    color:white;
+    padding-top: 25px;
+    z-index: 40;
+    transition: opacity 0.5s ease-in;
+    opacity: 100;
+
+}
+
+#logo{
+    margin-right: 30px;
+    width: 5%;
+    border-radius: 8px;
+}
+
+.headerLinks.scrolled{
+    opacity: 0;
+}
+
+.headerLinks.show{
+    opacity: 100;
+}
+
+.header a{
+    color: white;
+    border-radius: 4px;
+    border-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 17px;
+    text-decoration: none;
+
+}
+
+#headerLinks :hover{
+    background-color: black;
+}
+
+
+.bio{ 
+    display: flex;
+    min-height: 700px;
+    background-image: url("https://scontent.farn2-2.fna.fbcdn.net/v/t39.30808-6/367705117_255446823993860_213303902924801578_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=783fdb&_nc_ohc=c9BxxCF3MPIAX__6zzP&_nc_ht=scontent.farn2-2.fna&oh=00_AfDocZxJQk16mALmX4papUasd30Lvuqa-_BlPBrzzZgsmg&oe=65B1D6A7");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.bioText{
+    padding-left: 15px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    color: rgb(231, 230, 230);
+    text-shadow: 1px 1px 2px black;
+    width: 40%;
+}
+
+.bioText h2{
+    font-size: 50px;
+}
+
+.music{
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    font-size: 22px;
+    text-shadow: 1px 1px 2px black;
+    min-height: 900px;
+    background-image: url("https://scontent.farn2-2.fna.fbcdn.net/v/t39.30808-6/346281873_254452330411466_2007802429029994688_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=3635dc&_nc_ohc=eiJHqtSUxggAX8trROl&_nc_ht=scontent.farn2-2.fna&oh=00_AfBH-wTNotBhMq88oGILdQJhnpXJAaLoOz8pxXsaunnVgA&oe=65B1DD37");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+
+.musicText h2{
+    font-size: 50px;
+}
+
+.musicTextLeft{
+    padding-left: 15px;
+    width: 30%;
+}
+
+.musicTextLeft img{
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.musicTextRight{
+    padding-right: 15px;
+    width: 30%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.musicTextRight iframe{
+    width: 100%;
+    border-style: none;
+}
+
+.photosContainer{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;  
+    justify-content: center;
+}
+
+.photos img{
+    width: 30%;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    background-image: url("https://scontent.farn2-2.fna.fbcdn.net/v/t39.30808-6/346939922_1248573516032852_8959369333486440744_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=3635dc&_nc_ohc=OBzafei5L9QAX8EakDU&_nc_ht=scontent.farn2-2.fna&oh=00_AfCxUrmTxcHB2pW998rS-cNUWr-c0SGkXwPnqgDfM3ymmg&oe=65B06A84");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.contact h2{
+    text-align: center;
+    font-size: 40px;
+    color: aliceblue;
+    text-shadow: 1px 1px 2px black;
+}
+
+.contactInfo form{
+    width: 20%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 20px;
+    color: aliceblue;
+    text-shadow: 1px 1px 2px black;
+    padding-bottom: 50px;
+    padding-left: 15px;
+
+}
+
+.contactInfo input{
+    padding:8px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    gap:50px;
+}
+
+.footer h4{
+    margin-left: 100px;
+    font-size: 20px;
+    color: aliceblue;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+
+
+
