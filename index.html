@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
@@ -9,165 +10,227 @@
 
         document.addEventListener('wheel', (e) => {
 
-        if(e.deltaY > 0 || e.deltaY < 0){
-            headerLinks.classList.add('scrolled');
-        }else{
-            setOpacity();
-        }
+            if (e.deltaY > 0 || e.deltaY < 0) {
+                headerLinks.classList.add('scrolled');
+            } else {
+                setOpacity();
+            }
         });
 
         setInterval(setOpacity, 1700);
 
-        function setOpacity(){
+        function setOpacity() {
             headerLinks.classList.remove('scrolled');
         }
     </script>
     <script src="https://kit.fontawesome.com/df5f91b9e7.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-   <div class="helasidan">
-       <div class="header" id="home">
+    <div class="helasidan">
+        <div class="header" id="home">
             <div class="headerLinks" id="headerLinks">
                 <a href="#home">HOME</a>
                 <a href="#bio">BIO</button>
-                <a href="#music">MUSIC</a>
-                <a href="#photos">PHOTOS</a>
-                <a href="#contact">CONTACT</a>
-                <a href="https://www.instagram.com/wormroseband/" id="instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/wormroseofficial"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#music">MUSIC</a>
+                    <a href="#photos">PHOTOS</a>
+                    <a href="#contact">CONTACT</a>
+                    <a href="https://www.instagram.com/wormroseband/" id="instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/wormroseofficial"><i class="fa-brands fa-facebook-f"></i></a>
             </div>
-       </div>
-    
-       <div class="bio" id="bio">
-        <div class="bioText">
-            <h2>Bio</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti amet illo cupiditate! Nemo officia iste illo ab, recusandae voluptas, asperiores, nisi saepe nulla doloribus quibusdam repudiandae odit reiciendis? Consectetur, impedit.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem id veritatis odio ab, tempora quam reiciendis nostrum? Veniam praesentium molestiae tenetur quis quibusdam. Veritatis quidem aspernatur nam placeat, aliquam debitis.</p>
         </div>
-       </div>
 
-       <div class="music" id="music">
-        <div class="musicTextLeft">
-            <h2>Music</h2>
-            <img src="https://scontent.farn2-2.fna.fbcdn.net/v/t39.30808-6/360142854_238368809034995_5682513927216890006_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=3635dc&_nc_ohc=NNDUEC7TEAQAX8mi4QU&_nc_ht=scontent.farn2-2.fna&oh=00_AfAC2S0AlJm6k3ZubAt1LCufF7GVruhtWtQRgkNWUseXCg&oe=65B0CB79">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nihil maxime pariatur eos in nemo deleniti dolorem aliquid, repudiandae ipsam ut doloremque possimus odio culpa dolorum ab eveniet laudantium! Neque!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ab eligendi mollitia dicta voluptatibus itaque, est doloremque! Fuga ipsum quod libero, delectus explicabo ut doloribus. Reprehenderit facere ex animi velit.</p>
+        <div class="bio" id="bio">
+            <div class="bioContent">
+                <h2>Bio</h2>
+                <div class="bioTextContainer">
+                    <div class="bioTextLeft">
+                        <p>WormRose, a Swedish hard rock/metal band with a female front, was established in 2022 by Nils
+                            Leufvenius, the band's composer and guitarist. The formation of the group took place when all four
+                            members crossed paths at the same rock music school.
+                            <br \>
+                            <br \>
+                            Although Nils had initiated WormRose as a side project some time ago, the need for a team of
+                            accomplished musicians led him to recruit Zelda (vocals) and Adam Kapusta (drums). Their shared
+                            musical preferences made them enthusiastic contributors to the project.
+                            <br \>
+                            <br \>
+                            Recognizing the need for an exceptional bassist, the band extended an invitation to Alex Flygare.
+                            Having previously known and played with two of the members, he gratefully accepted and joined,
+                            marking a fortuitous addition to WormRose.
+                            With a complete lineup, WormRose immersed themselves in recording their debut album and outlined
+                            plans for future releases, kicking off with the debut single, "Sinners are Shades." Since their
+                            formation, WormRose has released four songs, performed at various concerts, and has ambitious plans
+                            to unveil in 2024.
+        
+                            <br \>
+                    </div>
+                    <div class="bioTextRight">
+                        <p>WormRose possesses the fortunate ability to seamlessly amalgamate four distinct personalities and a
+                            plethora of influences, resulting in a rock sound that stands apart from the ordinary.
+                            The diverse musical backgrounds of each member manifest in various facets and tones, reflecting
+                            influences from iconic bands such as Megadeth, Avenged Sevenfold, Cassiopeia, and Heart.
+                            <br \>
+                            <br \>
+                            While consistently anchored in the realm of hard rock, WormRose's music gracefully navigates the
+                            amalgamated musicianship of the band, producing a captivating soundscape. This dynamic interplay
+                            adds an intriguing dimension to their sonic expression, creating an engaging and distinctive musical
+                            experience.
+                            <br \>
+                            <br \>
+                            The band constantly experiments to achieve their artistic vision of integrity and uniqueness in
+                            lyrics and music. They aim to take listeners and the audience into sounds and environments where
+                            they are surprised by innovation and pure skill.
+                        </p>
+                    </div>
+                </div>
+            </dic>
         </div>
-        <div class="musicTextRight">
-            <iframe width="418" height="255"
-                src="https://www.youtube.com/embed/iAi_Av-gF1c">
-            </iframe>
 
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/46aG3n7LdbuSizVWM5WLpt?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <div class="music" id="music">
+            <div class="musicTextLeft">
+                <h2>Music</h2>
+                <div class="coronation">
+                    <img src="images/Coronation.png">
+                    <div class="coronationInfo">
+                        <h4>The coronation</h4>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/46aG3n7LdbuSizVWM5WLpt?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <div id="shareLogos">
+                            <a href="https://open.spotify.com/album/46aG3n7LdbuSizVWM5WLpt?si=NBRYA99SQMuAHb4bhP_T0A"><i class="fa-brands fa-spotify fa-xl" style="color: #ffffff;"></i></a>
+                            <a href="https://tidal.com/browse/album/297247385"><img src="images/tidal.png"></a>
+                            <a><i class="fa-brands fa-itunes fa-xl"></i></a>
+                            <a><i class="fa-brands fa-youtube fa-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
 
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat explicabo maiores amet ducimus. Doloribus alias eum ipsa consequatur quos. Quod nemo vero natus fuga non pariatur vel perspiciatis unde voluptates.</p>
+            </div>
+            <div class="musicTextRight">
+                
+
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/0qjlbcc9QW4fKTA49Cc1fV?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+                <p>Receiving acclaim from fans and critics alike, including notable figures like Laurent Merle of
+                    Listenable Records and Enforcer, WormRose's latest singles have garnered positive reactions. The
+                    band is already capturing the attention of music enthusiasts, both within Sweden and on the
+                    international stage. With a passionate and authentic approach to their craft, coupled with an
+                    unwavering work ethic, WormRose are meant to thrive and make a lasting impact on the music scene.
+                </p>
+            </div>
         </div>
-       </div>
 
-       <div class="full-img" id="fullImgBox">
+        <div class="full-img" id="fullImgBox">
             <img src="images/bioPic.jpg" id="fullImg">
             <span onclick="closeFullImg()">X</span>
-           <div id="leftArrow" onClick = "previousImg()"> 
+            <div id="leftArrow" onClick="previousImg()">
                 <i class="fa-solid fa-arrow-right fa-flip-horizontal" style="color: #ffffff;" id="leftArrow"></i>
             </div>
-            <div id="rightArrow" onclick = "nextImg()">
-                <i class="fa-solid fa-arrow-right" style="color: #ffffff;" id="rightArrow"></i>   
-            </div>      
- </div>
+            <div id="rightArrow" onclick="nextImg()">
+                <i class="fa-solid fa-arrow-right" style="color: #ffffff;" id="rightArrow"></i>
+            </div>
+        </div>
 
-       <div class="photosContainer" id="photos">
+        <div class="photosContainer" id="photos">
             <div class="photos">
                 <img src="images/band1.jpg" id="1" onclick="openFullImg(this.src, this.id)">
-                <img src="images/nils1.jpg" id= "2" onclick="openFullImg(this.src, this.id)">
+                <img src="images/nils1.jpg" id="2" onclick="openFullImg(this.src, this.id)">
                 <img src="images/flygare1.jpg" id="3" onclick="openFullImg(this.src, this.id)">
-                <img src="images/zelda1.jpg" id= "4" onclick="openFullImg(this.src, this.id)">
+                <img src="images/zelda1.jpg" id="4" onclick="openFullImg(this.src, this.id)">
                 <img src="images/kapusta1.jpg" id="5" onclick="openFullImg(this.src, this.id)">
                 <img src="images/band2.jpg" id="6" onclick="openFullImg(this.src, this.id)">
             </div>
-       </div>
-
-       <script>
-
-        var fullImgBox = document.getElementById("fullImgBox")
-        var fullImg = document.getElementById("fullImg")
-        var currentId;
-
-        function openFullImg(pic, id){
-            fullImgBox.style.display = "flex";
-            fullImg.src = pic;
-            currentId = id;
-        }
-
-        function closeFullImg(){
-            fullImgBox.style.display = "none";
-            currentId = 0;
-        }
-
-        function nextImg(){
-            var newId = parseInt(currentId) + 1;
-            if(newId <= 6){
-                fullImg.src = document.getElementById(newId.toString()).src
-                currentId = newId
-            }
-        }
-
-        function previousImg(){
-            console.log("Current id: " + currentId)
-            var newId = parseInt(currentId) - 1;
-            if(newId > 0){
-                fullImg.src = document.getElementById(newId.toString()).src
-                currentId = newId
-            }
-            
-        }
-
-       </script>
-
-       <div class="contact" id="contact">
-        <h2>Contact</h2>
-        <div class="contactInfo">
-            <form
-            action="https://formspree.io/f/xyyrkgad"
-            method="POST">
-                <h3>Name</h3>
-                <input type="text" id="name" placeholder="" required>
-                <h3>Email</h3>
-                <input type="email" id="email" placeholder="" required>
-                <h3>Message</h3>
-                <textarea name="message" id="message" rows="8" placeholder=" "></textarea>
-                <button type="submit">Submit</button>
-            </form>
         </div>
-       </div>
 
-       <div class="footer">
-        <h4>Join our mailing list</h4>
-        <div class="footerLinks">
-            <a href="https://www.facebook.com/wormroseofficial"><i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i></a>
-            <a href="https://www.instagram.com/wormroseband/"><i class="fa-brands fa-square-instagram" style="color: #ffffff;"></i></a>
-            <a href="https://open.spotify.com/artist/0qjlbcc9QW4fKTA49Cc1fV?si=-LHpD-CzSlC9dt8sltgj9Q"><i class="fa-brands fa-spotify" style="color: #ffffff;"></i></a>
+        <div class="videosContainer">
+            <iframe width="418" height="255" src="https://www.youtube.com/embed/iAi_Av-gF1c">
+            </iframe>
         </div>
-       </div>
-   </div>
+
+        <script>
+
+            var fullImgBox = document.getElementById("fullImgBox")
+            var fullImg = document.getElementById("fullImg")
+            var currentId;
+
+            function openFullImg(pic, id) {
+                fullImgBox.style.display = "flex";
+                fullImg.src = pic;
+                currentId = id;
+            }
+
+            function closeFullImg() {
+                fullImgBox.style.display = "none";
+                currentId = 0;
+            }
+
+            function nextImg() {
+                var newId = parseInt(currentId) + 1;
+                if (newId <= 6) {
+                    fullImg.src = document.getElementById(newId.toString()).src
+                    currentId = newId
+                }
+            }
+
+            function previousImg() {
+                console.log("Current id: " + currentId)
+                var newId = parseInt(currentId) - 1;
+                if (newId > 0) {
+                    fullImg.src = document.getElementById(newId.toString()).src
+                    currentId = newId
+                }
+
+            }
+
+        </script>
+
+        <div class="contact" id="contact">
+            <h2>Contact</h2>
+            <div class="contactInfo">
+                <form action="https://formspree.io/f/xyyrkgad" method="POST">
+                    <h3>Name</h3>
+                    <input type="text" id="name" placeholder="" required>
+                    <h3>Email</h3>
+                    <input type="email" id="email" placeholder="" required>
+                    <h3>Message</h3>
+                    <textarea name="message" id="message" rows="8" placeholder=" "></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h4>Join our mailing list</h4>
+            <div class="footerLinks">
+                <a href="https://www.facebook.com/wormroseofficial"><i class="fa-brands fa-square-facebook"
+                        style="color: #ffffff;"></i></a>
+                <a href="https://www.instagram.com/wormroseband/"><i class="fa-brands fa-square-instagram"
+                        style="color: #ffffff;"></i></a>
+                <a href="https://open.spotify.com/artist/0qjlbcc9QW4fKTA49Cc1fV?si=-LHpD-CzSlC9dt8sltgj9Q"><i
+                        class="fa-brands fa-spotify" style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+    </div>
 
 
 
-   
 
-   <script src="https://smtpjs.com/v3/smtp.js"></script>
-   <script> function sendEmail(){
-    Email.send({
-SecureToken : "218aeb0b-a0af-4a20-9ccd-3cecb774db03",
-To : 'nolelolel@gmail.com',
-From : document.getElementById("email").value,
-Subject : "Contactform",
-Body : "Name: " + document.getElementById("name").value
-+ "<br> Email: " + document.getElementById("email").value
-+ "<br> Message: " + document.getElementById("message").value
-}).then(
-message => alert("We look forward to your email"),
-);
-}</script>
-    
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script> function sendEmail() {
+            Email.send({
+                SecureToken: "218aeb0b-a0af-4a20-9ccd-3cecb774db03",
+                To: 'nolelolel@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "Contactform",
+                Body: "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Message: " + document.getElementById("message").value
+            }).then(
+                message => alert("We look forward to your email"),
+            );
+        }</script>
+
 </body>
+
 </html>

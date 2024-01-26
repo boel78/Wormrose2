@@ -64,27 +64,47 @@ body{
 
 .bio{ 
     display: flex;
+    flex-direction: column;
     min-height: 700px;
     background-image: url("images/bioPic.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
-}
-
-.bioText{
-    padding-left: 15px;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
     font-size: 22px;
     color: rgb(231, 230, 230);
     text-shadow: 1px 1px 2px black;
-    width: 40%;
+    width: 100%;
+
 }
 
-.bioText h2{
+.bioContent{
+    padding-left: 2%;
+}
+
+
+.bioTextContainer{
+    display: flex;
+    gap: 10%;
+}
+
+.bioTextLeft{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.bioTextRight{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.bio h2{
     font-size: 50px;
+    margin-bottom: 0px;
+}
+
+.bioText p{
+    margin-top: 5px;
 }
 
 .music{
@@ -99,6 +119,34 @@ body{
     background-position: center;
     background-attachment: fixed;
 
+}
+
+#shareLogos img{
+    max-width: 28px;
+    max-height: 28px;
+}
+
+.coronation{
+    display: flex;
+    min-width: 70%;
+    gap: 5%;
+}
+
+.coronation img{
+    flex: 1;
+}
+
+
+.coronationInfo{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.coronationInfo h4{
+    margin: 0px;
 }
 
 
