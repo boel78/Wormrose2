@@ -28,7 +28,6 @@
    <div class="helasidan">
        <div class="header" id="home">
             <div class="headerLinks" id="headerLinks">
-                <img src="https://scontent.farn2-2.fna.fbcdn.net/v/t39.30808-6/314638183_129186599953217_3663629789865854816_n.png?_nc_cat=104&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=hXph0NjcLJEAX94i4wv&_nc_ht=scontent.farn2-2.fna&oh=00_AfDdkNOQ_DE2gMFkVMrbKR0O3uKVw8BGSm3u3MmzwQ6n4A&oe=65B0DF10" id="logo">
                 <a href="#home">HOME</a>
                 <a href="#bio">BIO</button>
                 <a href="#music">MUSIC</a>
@@ -68,7 +67,7 @@
        <div class="full-img" id="fullImgBox">
             <img src="images/bioPic.jpg" id="fullImg">
             <span onclick="closeFullImg()">X</span>
-           <div id="leftArrow"> 
+           <div id="leftArrow" onClick = "previousImg()"> 
                 <i class="fa-solid fa-arrow-right fa-flip-horizontal" style="color: #ffffff;" id="leftArrow"></i>
             </div>
             <div id="rightArrow" onclick = "nextImg()">
@@ -105,10 +104,21 @@
         }
 
         function nextImg(){
-            console.log("Current id: " + currentId)
             var newId = parseInt(currentId) + 1;
-            fullImg.src = document.getElementById(newId.toString()).src
-            currentId = newId
+            if(newId <= 6){
+                fullImg.src = document.getElementById(newId.toString()).src
+                currentId = newId
+            }
+        }
+
+        function previousImg(){
+            console.log("Current id: " + currentId)
+            var newId = parseInt(currentId) - 1;
+            if(newId > 0){
+                fullImg.src = document.getElementById(newId.toString()).src
+                currentId = newId
+            }
+            
         }
 
        </script>
