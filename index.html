@@ -79,11 +79,11 @@
        <div class="photosContainer" id="photos">
             <div class="photos">
                 <img src="images/band1.jpg" id="1" onclick="openFullImg(this.src, this.id)">
-                <img src="images/nils1.jpg" id= "2" onclick="openFullImg(this.src)">
-                <img src="images/flygare1.jpg" id="3" onclick="openFullImg(this.src)">
-                <img src="images/zelda1.jpg" id= "4" onclick="openFullImg(this.src)">
-                <img src="images/kapusta1.jpg" id="5" onclick="openFullImg(this.src)">
-                <img src="images/band2.jpg" id="6" onclick="openFullImg(this.src)">
+                <img src="images/nils1.jpg" id= "2" onclick="openFullImg(this.src, this.id)">
+                <img src="images/flygare1.jpg" id="3" onclick="openFullImg(this.src, this.id)">
+                <img src="images/zelda1.jpg" id= "4" onclick="openFullImg(this.src, this.id)">
+                <img src="images/kapusta1.jpg" id="5" onclick="openFullImg(this.src, this.id)">
+                <img src="images/band2.jpg" id="6" onclick="openFullImg(this.src, this.id)">
             </div>
        </div>
 
@@ -101,6 +101,7 @@
 
         function closeFullImg(){
             fullImgBox.style.display = "none";
+            currentId = 0;
         }
 
         function nextImg(){
