@@ -65,16 +65,52 @@
         </div>
        </div>
 
+       <div class="full-img" id="fullImgBox">
+            <img src="images/bioPic.jpg" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+           <div id="leftArrow"> 
+                <i class="fa-solid fa-arrow-right fa-flip-horizontal" style="color: #ffffff;" id="leftArrow"></i>
+            </div>
+            <div id="rightArrow" onclick = "nextImg()">
+                <i class="fa-solid fa-arrow-right" style="color: #ffffff;" id="rightArrow"></i>   
+            </div>      
+ </div>
+
        <div class="photosContainer" id="photos">
             <div class="photos">
-                <img src="https://scontent.farn2-2.fna.fbcdn.net/v/t39.30808-6/353762657_220489757489567_565779357313401018_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=3635dc&_nc_ohc=d9CLeCfOUXEAX8I4igf&_nc_ht=scontent.farn2-2.fna&oh=00_AfBdhNdqcs0nghgqdBgMKTyBiFGh45wXWb_PhC9WXeDtNA&oe=65B11A09">
-                <img src="https://scontent.farn2-2.fna.fbcdn.net/v/t39.30808-6/353651509_220489754156234_1821925156008731869_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=wW3noDt0uD8AX97LsRM&_nc_ht=scontent.farn2-2.fna&oh=00_AfCN45W94iHsNIu8itcNtGD2OKokPHmUH-sIlWT3TrZaRg&oe=65B1D2EC">
-                <img src="https://scontent.farn2-2.fna.fbcdn.net/v/t39.30808-6/353652947_220489750822901_832141249460406900_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=3635dc&_nc_ohc=h0iyNGeyi68AX_-yGLL&_nc_ht=scontent.farn2-2.fna&oh=00_AfBa1ZR84ErfLAQBZ1BqC1iXetwLGasryP3MxsFC_V-2IQ&oe=65B14F7F">
-                <img src="https://scontent.farn2-2.fna.fbcdn.net/v/t39.30808-6/353649685_220489764156233_8941860247087253198_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=MHYnGWIVGAkAX97p3pE&_nc_ht=scontent.farn2-2.fna&oh=00_AfAwCCsb041mIteT2onkn222MB08lMq_XzPt7Dmy6koRtw&oe=65B0923E">
-                <img src="https://scontent.farn2-2.fna.fbcdn.net/v/t39.30808-6/316124367_129448306593713_203314533362455993_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=7klc1pFKdzUAX_Iamaf&_nc_ht=scontent.farn2-2.fna&oh=00_AfDgQN894oB8_s4JaPPFXa7j1_oYa6vbgP7iJhSTeLnOuQ&oe=65B1B05B">
-                <img src="https://scontent.farn2-2.fna.fbcdn.net/v/t39.30808-6/345650205_644062010900989_4658600151679940482_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=3635dc&_nc_ohc=0mRa3jnfEnEAX8wEGdJ&_nc_ht=scontent.farn2-2.fna&oh=00_AfCmRe-tZeExmbdlcVtJa5a7cS2-8wLeJ2lR9NvnNvLZIg&oe=65B05B67">
+                <img src="images/band1.jpg" id="1" onclick="openFullImg(this.src, this.id)">
+                <img src="images/nils1.jpg" id= "2" onclick="openFullImg(this.src)">
+                <img src="images/flygare1.jpg" id="3" onclick="openFullImg(this.src)">
+                <img src="images/zelda1.jpg" id= "4" onclick="openFullImg(this.src)">
+                <img src="images/kapusta1.jpg" id="5" onclick="openFullImg(this.src)">
+                <img src="images/band2.jpg" id="6" onclick="openFullImg(this.src)">
             </div>
        </div>
+
+       <script>
+
+        var fullImgBox = document.getElementById("fullImgBox")
+        var fullImg = document.getElementById("fullImg")
+        var currentId;
+
+        function openFullImg(pic, id){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+            currentId = id;
+        }
+
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+
+        function nextImg(){
+            console.log("Current id: " + currentId)
+            var newId = parseInt(currentId) + 1;
+            fullImg.src = document.getElementById(newId.toString()).src
+            currentId = newId
+        }
+
+       </script>
 
        <div class="contact" id="contact">
         <h2>Contact</h2>

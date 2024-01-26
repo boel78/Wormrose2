@@ -19,7 +19,7 @@ body{
     min-height: 700px;
     display: flex;
     justify-content: center;
-    background-image: url("https://scontent.farn2-2.fna.fbcdn.net/v/t39.30808-6/327230066_935705961174155_6464509754669393503_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=Zatf-1_cf4MAX-S0bSu&_nc_ht=scontent.farn2-2.fna&oh=00_AfApMDYC2A47s7xj3NR-VCeHyw0xMCgm0NiPDYsL_bDVzw&oe=65AFE802");
+    background-image: url(images/headerPic.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -73,7 +73,7 @@ body{
 .bio{ 
     display: flex;
     min-height: 700px;
-    background-image: url("https://scontent.farn2-2.fna.fbcdn.net/v/t39.30808-6/367705117_255446823993860_213303902924801578_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=783fdb&_nc_ohc=c9BxxCF3MPIAX__6zzP&_nc_ht=scontent.farn2-2.fna&oh=00_AfDocZxJQk16mALmX4papUasd30Lvuqa-_BlPBrzzZgsmg&oe=65B1D6A7");
+    background-image: url("images/bioPic.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -102,7 +102,7 @@ body{
     font-size: 22px;
     text-shadow: 1px 1px 2px black;
     min-height: 900px;
-    background-image: url("https://scontent.farn2-2.fna.fbcdn.net/v/t39.30808-6/346281873_254452330411466_2007802429029994688_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=3635dc&_nc_ohc=eiJHqtSUxggAX8trROl&_nc_ht=scontent.farn2-2.fna&oh=00_AfBH-wTNotBhMq88oGILdQJhnpXJAaLoOz8pxXsaunnVgA&oe=65B1DD37");
+    background-image: url("images/musicPic.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -142,6 +142,7 @@ body{
 .photosContainer{
     display:flex;
     flex-direction: column;
+    flex-wrap: wrap;
 
 }
 
@@ -153,14 +154,71 @@ body{
 }
 
 .photos img{
+    object-fit: cover;
     width: 30%;
+    max-height: 400px;
+    min-height: 400px;
+
+}
+
+.photos img:hover{
+    transform: scale(1.08);
+    border-radius: 4px;
+    box-shadow: 0 24px 50px;
+}
+
+.full-img{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.full-img img{
+    width: 100%;
+    max-width: 800px;
+}
+
+.full-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.full-img i{
+    font-size: 40px;
+    position: absolute;
+    z-index: 110;
+}
+
+#leftArrow{
+    background: rgba(0, 0, 0, 0.354);
+    left: 10%
+}
+
+#rightArrow{
+    right: 10%
+}
+
+#notContain{
+    object-fit:fill
 }
 
 .contact{
     display: flex;
     flex-direction: column;
     gap:25px;
-    background-image: url("https://scontent.farn2-2.fna.fbcdn.net/v/t39.30808-6/346939922_1248573516032852_8959369333486440744_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=3635dc&_nc_ohc=OBzafei5L9QAX8EakDU&_nc_ht=scontent.farn2-2.fna&oh=00_AfCxUrmTxcHB2pW998rS-cNUWr-c0SGkXwPnqgDfM3ymmg&oe=65B06A84");
+    background-image: url("images/contactPic.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
