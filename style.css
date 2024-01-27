@@ -14,7 +14,7 @@ body{
 }
 
 .header{
-    min-height: 700px;
+    min-height: 900px;
     display: flex;
     justify-content: center;
     background-image: url(images/headerPic.jpg);
@@ -65,7 +65,7 @@ body{
 .bio{ 
     display: flex;
     flex-direction: column;
-    min-height: 700px;
+    min-height: 900px;
     background-image: url("images/bioPic.jpg");
     background-size: cover;
     background-position: center;
@@ -180,6 +180,7 @@ body{
 }
 
 .photosContainer{
+    min-height: 900px;
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -256,6 +257,7 @@ body{
 }
 
 .videosContainer{
+    min-height: 900px;
     display: flex;
     flex-wrap: wrap;
     padding-left: 15px;
@@ -274,6 +276,7 @@ body{
 }
 
 .contact{
+    min-height: 900px;
     display: flex;
     flex-direction: column;
     gap:25px;
@@ -306,10 +309,12 @@ body{
 }
 
 .contact button{
-    width: 25%;
+    width: 40%;
     align-self: center;
-    padding: 6%;
-    font-size: 20px;
+    padding: 4%;
+    font-size: 17px;
+    border-radius: 6px;
+    border-style: none;
 }
 
 .contactInfo input{
@@ -317,6 +322,7 @@ body{
 }
 
 .footer{
+    min-height: 400px;
     display: flex;
     justify-content: center;
     gap:50px;
