@@ -34,6 +34,7 @@
                 <a href="#bio">BIO</button>
                     <a href="#music">MUSIC</a>
                     <a href="#photos">PHOTOS</a>
+                    <a href="#videos">VIDEOS</a>
                     <a href="#contact">CONTACT</a>
                     <a href="https://www.instagram.com/wormroseband/" id="instagram"><i
                             class="fa-brands fa-instagram"></i></a>
@@ -86,6 +87,7 @@
                     </div>
                 </div>
             </dic>
+            </div>
         </div>
 
         <div class="music" id="music">
@@ -99,8 +101,8 @@
                         <div id="shareLogos">
                             <a href="https://open.spotify.com/album/46aG3n7LdbuSizVWM5WLpt?si=NBRYA99SQMuAHb4bhP_T0A"><i class="fa-brands fa-spotify fa-xl" style="color: #ffffff;"></i></a>
                             <a href="https://tidal.com/browse/album/297247385"><img src="images/tidal.png"></a>
-                            <a><i class="fa-brands fa-itunes fa-xl"></i></a>
-                            <a><i class="fa-brands fa-youtube fa-xl"></i></a>
+                            <a href="https://music.apple.com/se/album/the-coronation-ep/1690038839"><i class="fa-brands fa-itunes fa-xl" style="color: #ffffff;"></i></a>
+                            <a href="https://www.youtube.com/watch?v=eLIrK3v4RQc&list=OLAK5uy_mM1VznxBa2XZwqySsEAe1kfPk_p0pyfPg"><i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i></a>
                         </div>
                     </div>
                 </div>
@@ -120,31 +122,40 @@
             </div>
         </div>
 
-        <div class="full-img" id="fullImgBox">
-            <img src="images/bioPic.jpg" id="fullImg">
-            <span onclick="closeFullImg()">X</span>
-            <div id="leftArrow" onClick="previousImg()">
-                <i class="fa-solid fa-arrow-right fa-flip-horizontal" style="color: #ffffff;" id="leftArrow"></i>
+        <div class="photosPage"  id="photos">
+            <div class="full-img" id="fullImgBox">
+                <img src="images/bioPic.jpg" id="fullImg">
+                <span onclick="closeFullImg()">X</span>
+                <div id="leftArrow" onClick="previousImg()">
+                    <i class="fa-solid fa-arrow-right fa-flip-horizontal" style="color: #ffffff;" id="leftArrow"></i>
+                </div>
+                <div id="rightArrow" onclick="nextImg()">
+                    <i class="fa-solid fa-arrow-right" style="color: #ffffff;" id="rightArrow"></i>
+                </div>
             </div>
-            <div id="rightArrow" onclick="nextImg()">
-                <i class="fa-solid fa-arrow-right" style="color: #ffffff;" id="rightArrow"></i>
+    
+            <div class="photosContainer">
+                <div class="photos">
+                    <img src="images/band1.jpg" id="1" onclick="openFullImg(this.src, this.id)">
+                    <img src="images/nils1.jpg" id="2" onclick="openFullImg(this.src, this.id)">
+                    <img src="images/flygare1.jpg" id="3" onclick="openFullImg(this.src, this.id)">
+                    <img src="images/zelda1.jpg" id="4" onclick="openFullImg(this.src, this.id)">
+                    <img src="images/kapusta1.jpg" id="5" onclick="openFullImg(this.src, this.id)">
+                    <img src="images/band2.jpg" id="6" onclick="openFullImg(this.src, this.id)">
+                </div>
             </div>
         </div>
 
-        <div class="photosContainer" id="photos">
-            <div class="photos">
-                <img src="images/band1.jpg" id="1" onclick="openFullImg(this.src, this.id)">
-                <img src="images/nils1.jpg" id="2" onclick="openFullImg(this.src, this.id)">
-                <img src="images/flygare1.jpg" id="3" onclick="openFullImg(this.src, this.id)">
-                <img src="images/zelda1.jpg" id="4" onclick="openFullImg(this.src, this.id)">
-                <img src="images/kapusta1.jpg" id="5" onclick="openFullImg(this.src, this.id)">
-                <img src="images/band2.jpg" id="6" onclick="openFullImg(this.src, this.id)">
+        <div class="videosContainer" id="videos">
+            <h2>Videos</h2>
+            <div class="videos">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wQEc6k9sUMU?si=T7Hqk8Efs-69uRTG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vze0ra3yHzk?si=b111w-Ry452i8Pue" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jvkrqXCCebU?si=uepXDel2aa72TAfR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BbYqSsE0Yko?si=cB84hwzPLI9VmqzK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ViqkoYqOi6A?si=_yCSeLI4oySkoyQ3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7-xYj8yQrIc?si=l8MRKa6aiMeX-zyf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-        </div>
-
-        <div class="videosContainer">
-            <iframe width="418" height="255" src="https://www.youtube.com/embed/iAi_Av-gF1c">
-            </iframe>
         </div>
 
         <script>
