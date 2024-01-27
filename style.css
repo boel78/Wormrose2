@@ -180,7 +180,7 @@ body{
 }
 
 .photosContainer{
-    min-height: 900px;
+    min-height: 700px;
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -199,8 +199,8 @@ body{
 .photos img{
     object-fit: cover;
     width: 30%;
-    max-height: 400px;
-    min-height: 400px;
+    max-height: 500px;
+    min-height: 500px;
 
 }
 
@@ -273,6 +273,7 @@ body{
     column-gap: 10px;
     row-gap: 40px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .contact{
@@ -288,7 +289,6 @@ body{
 
 
 .contact h2{
-    text-align: center;
     font-size: 40px;
     color: aliceblue;
     text-shadow: 1px 1px 2px black;
@@ -322,7 +322,7 @@ body{
 }
 
 .footer{
-    min-height: 400px;
+    min-height: 50px;
     display: flex;
     justify-content: center;
     gap:50px;
