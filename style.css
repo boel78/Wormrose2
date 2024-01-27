@@ -260,8 +260,9 @@ body{
 .videosContainer{
     min-height: 900px;
     display: flex;
-    flex-wrap: wrap;
     padding-left: 15px;
+    width:95%;
+    justify-content: center;
 
 }
 .videosContainer h2{
@@ -275,6 +276,7 @@ body{
     row-gap: 40px;
     flex-wrap: wrap;
     justify-content: center;
+    width:100%;
 }
 
 .contact{
