@@ -452,13 +452,14 @@ body{
 
 @media screen and (max-width: 1980px){
     .header{
-        min-height: 800px;
+        min-height: 1100px;
     }
     .musicTextRight{
-        font-size: 20px;
+        font-size: 30px;
     }
     .bio{
-        font-size: 25px;
+        min-height: 1100px;
+        font-size: 30px;
     }
     .contact{
         min-height: 650px;
@@ -468,7 +469,7 @@ body{
         gap:8px;
     }
     .music{
-        min-height: 700px;
+        min-height: 900px;
     }
     .photosContainer{
         min-height: 300px;
@@ -479,6 +480,20 @@ body{
         max-height: 300px;
         min-height: 300px;
     
+    }
+    .videos{
+        column-gap: 2%;
+        max-height: 300px;
+    }
+    .videos iframe{
+        max-height: 320px;
+        max-width: 480px;
+    }
+    .videosContainer{
+        padding-left: 3%;
+        min-height: 700px;
+        display: flex;
+        justify-content: center;
     }
 
 }
