@@ -81,7 +81,7 @@ body{
     font-size: 40px;
     font-family: sans-serif;
     color: rgb(231, 230, 230);
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 3px 3px 1px black;
     width: 100%;
 
 }
@@ -298,6 +298,7 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    font-family: sans-serif;
 }
 
 
@@ -424,6 +425,39 @@ body{
     }
     .full-img img{
         max-width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 1900px){
+    .header{
+        min-height: 800px;
+    }
+    .musicTextRight{
+        font-size: 20px;
+    }
+    .bio{
+        font-size: 25px;
+    }
+    .contact{
+        min-height: 650px;
+        gap:7px;
+    }
+    .contactInfo form{
+        gap:8px;
+    }
+    .music{
+        min-height: 700px;
+    }
+    .photosContainer{
+        min-height: 300px;
+    }
+    .photos img{
+        object-fit: cover;
+        width: 30%;
+        max-height: 300px;
+        min-height: 300px;
+    
     }
 
 }
