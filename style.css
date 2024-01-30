@@ -157,6 +157,14 @@ body{
 
 .coronationInfo h4{
     margin: 0px;
+    
+}
+
+.endoftheline{
+    margin-top: 12%;
+    display: flex;
+    min-width: 70%;
+    gap: 5%;
 }
 
 
@@ -167,6 +175,9 @@ body{
 .musicTextLeft{
     padding-left: 15px;
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap:5%;
 }
 
 .musicTextLeft img{
