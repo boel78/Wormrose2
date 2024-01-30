@@ -334,7 +334,7 @@ body{
 }
 
 .contact button{
-    width: 65%;
+    width: 34%;
     align-self: center;
     padding: 3%;
     font-size: 17px;
@@ -368,9 +368,13 @@ body{
     height: 8%;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 1100px){
     .header{
         min-height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
     }
     .headerLinks{
         position: relative;
@@ -380,39 +384,40 @@ body{
     }
 
     .helasidan{
-        max-width: 700px;
+        max-width: 1100px;
     }
 
     .bio{
         font-size: 20px;
     }
 
-    .coronation{
-    }
-    .coronation iframe{
-        display: none;
-    }
     .coronation img{
         max-width: 200px;
         max-height: 200px;
     }
+
+    .endoftheline img{
+        max-width: 200px;
+        max-height: 200px;
+    }
+
     .musicTextRight{
-        font-size: 20px;
+        font-size: 23px;
     }
     .musicTextRight iframe{
         max-height: 100px;
     }
     .videos iframe{
         max-height: 180px;
-        max-width: 240px;
+        max-width: 330px;
     }
     .videos{
-        row-gap: 10px;
+        column-gap: 8%;
         max-height: 180px;
     }
     .videosContainer{
-        max-height: 350px;
-        min-height: 550px;
+        max-height: 650px;
+        min-height: 650px;
     }
     .photosContainer{
         min-height: 300px;
@@ -425,8 +430,12 @@ body{
     
     }
     .contact{
-        min-height: 650px;
-        gap:7px;
+        max-height: 780px;
+        min-height: 780px;
+        gap:45px;
+        background-size:109%;
+        background-position:bottom;
+
     }
     .contactInfo form{
         gap:8px;
@@ -568,6 +577,9 @@ body{
     }
     .full-img img{
         max-width: 200px;
+    }
+    .contact button{
+        width: 65%;
     }
 
 }
