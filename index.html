@@ -8,9 +8,10 @@
     <title>Wormrose</title>
     <script>
 
+
         document.addEventListener('wheel', (e) => {
 
-            if (e.deltaY > 0 || e.deltaY < 0) {
+            if ((e.deltaY > 0 || e.deltaY < 0) && screen.width > 700) {
                 headerLinks.classList.add('scrolled');
             } else {
                 setOpacity();
