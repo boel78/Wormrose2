@@ -29,7 +29,7 @@ body{
     display: flex;
     justify-content: center;
     color:white;
-    padding-top: 25px;
+    margin-top: 25px;
     z-index: 40;
     transition: opacity 0.5s ease-in;
     opacity: 100;
@@ -58,8 +58,12 @@ body{
 
 }
 
-#headerLinks :hover{
+#headerLinks{
     background-color: black;
+}
+
+#headerLinks :hover{
+    color:gold;
 }
 
 #mainLogo{
