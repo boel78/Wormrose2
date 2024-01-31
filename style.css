@@ -510,9 +510,11 @@ body{
     }
     .headerLinks{
         position: relative;
+        gap:8px;
     }
     .headerLinks a{
         padding: 2px;
+        font-size: 12px;
     }
 
     .helasidan{
@@ -521,6 +523,7 @@ body{
 
     .bio{
         font-size: 20px;
+        background-size: contain;
     }
     #mainLogo{
         z-index: 20;
