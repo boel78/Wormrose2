@@ -523,7 +523,8 @@ body{
 
     .bio{
         font-size: 20px;
-        background-size: contain;
+        background-size: cover;
+        background-position:10%;
     }
     #mainLogo{
         z-index: 20;
@@ -534,7 +535,11 @@ body{
     }
 
     .music{
-        min-height: 570px;
+        min-height: 540px;
+    }
+
+    .musicTextRight iframe{
+        display: none;
     }
 
 
@@ -556,6 +561,10 @@ body{
     .musicTextRight{
         font-size: 12px;
         max-height: 200px;
+        padding-top: 11%;
+    }
+    .musicTextLeft{
+        gap:5%;
     }
     .musicTextRight iframe{
         max-height: 100px;
@@ -570,7 +579,7 @@ body{
     }
     .videosContainer{
         max-height: 500px;
-        min-height: 500px;
+        min-height: 200px;
     }
     .photosContainer{
         min-height: 300px;
